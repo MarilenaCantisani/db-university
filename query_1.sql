@@ -29,3 +29,7 @@ WHERE `date` = '2020-06-20' AND `hour` > '14:00:00';
 SELECT `name`, `level`
 FROM `degrees`
 WHERE `level` = 'magistrale';
+
+-- 7) Da quanti dipartimenti è composta l'università?
+SELECT COUNT(*) AS `n_departments`
+FROM `departments`;
