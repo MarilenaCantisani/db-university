@@ -7,3 +7,8 @@ GROUP BY `year`;
 SELECT `office_address`, COUNT(*) AS `tot_teachers`
 FROM `teachers`
 GROUP BY `office_address`;
+
+-- 3) Calcolare la media dei voti di ogni appello d'esame:
+SELECT `exam_id`, ROUND(AVG(`vote`), 2) AS `average_votes`
+FROM `exam_student`
+GROUP BY `exam_id`;
